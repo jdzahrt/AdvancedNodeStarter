@@ -10,8 +10,8 @@ const keys = require('./config/keys');
 require('./models/User');
 require('./models/Blog');
 require('./services/passport');
-console.log('keys', keys);
-console.log('process.env.MONGO_URI', process.env.MONGO_URI);
+// console.log('keys', keys);
+// console.log('process.env.MONGO_URI', process.env.MONGO_URI);
 mongoose.Promise = global.Promise;
 mongoose.connect(keys.mongoURI, { useMongoClient: true });
 

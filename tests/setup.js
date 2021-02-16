@@ -1,3 +1,5 @@
+Number.prototype._called = {};
+jest.setTimeout(35000);
 require('../models/User');
 
 const mongoose = require('mongoose');
